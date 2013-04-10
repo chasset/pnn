@@ -9,14 +9,14 @@ This program implements the algorithm proposed by Specht (1990). It is written i
 License
 -------
 
-This program is released under the [GNU Affero General public license](http://www.gnu.org/licenses/agpl.html).
+This program is released under the [GNU Affero General public license](http://www.gnu.org/licenses/agpl.html). The source code is available at [CRAN](http://cran.r-project.org/web/packages/pnn/index.html).
 
 How to cite
 -----------
 
-Chasset P.-O. (2013). Probabilistic neural network library for the statistical language R. Software, http://chasset.net/r-pnn/.
+Chasset P.-O. (2013). *Probabilistic neural network library for the statistical language R*. Software, version 0.9.3, http://chasset.net/r-pnn/.
 
 Reference
 ---------
 
-Specht, D. F. (1990). Probabilistic neural networks. Neural networks, 3(1):109–118.
+Specht, D. F. (1990). *Probabilistic neural networks*. Neural networks, 3(1):109–118.
