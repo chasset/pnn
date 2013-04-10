@@ -1,0 +1,21 @@
+Package: pnn
+Maintainer: Pierre-Olivier Chasset <pierre-olivier@chasset.net>
+Author: Pierre-Olivier Chasset
+Version: 0.9.0
+License: GPL-3
+Title: Probabilistic neural networks
+Description: Probabilistic neural networks guess a category for a given
+    individual defined by a vector of numerical values.
+Suggests:
+    testthat,
+    roxygen2
+Collate:
+    'create.R'
+    'holdout.R'
+    'kernel.R'
+    'learn.R'
+    'optim.R'
+    'pnn-package.r'
+    'predict.r'
+    'skin.R'
+    'data-norms.R'
