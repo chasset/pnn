@@ -7,7 +7,7 @@ Description: This program implements the algorithm proposed by Specht (1990).
     the algorithm is trained with this datasets and should guess afterwards the 
     group of any new observation.
 URL: http://chasset.net/r-pnn/
-Version: 0.9.2
+Version: 0.9.3
 Author: Pierre-Olivier Chasset
 Maintainer: Pierre-Olivier Chasset <pierre-olivier@chasset.net>
 License: AGPL
