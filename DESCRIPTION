@@ -2,12 +2,12 @@ Package: pnn
 Title: Probabilistic neural networks
 Description: This program implements the algorithm proposed by Specht (1990).
     It is written in the statistical langage R. It solves a common problem in
-    automatic learning. Knowing a set of observations described by a vector of 
-    quantitative variables, we classify them in a given number of groups. Then, 
-    the algorithm is trained with this datasets and should guess afterwards the 
+    automatic learning. Knowing a set of observations described by a vector of
+    quantitative variables, we classify them in a given number of groups. Then,
+    the algorithm is trained with this datasets and should guess afterwards the
     group of any new observation.
 URL: http://chasset.net/r-pnn/
-Version: 0.9.3
+Version: 0.9.4
 Author: Pierre-Olivier Chasset
 Maintainer: Pierre-Olivier Chasset <pierre-olivier@chasset.net>
 License: AGPL
@@ -24,3 +24,6 @@ Collate:
     'predict.r'
     'skin.R'
     'data-norms.R'
+    'guess-category.R'
+    'guess-probabilities.R'
+    'perf.r'

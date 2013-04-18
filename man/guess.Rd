@@ -1,8 +1,8 @@
-\name{guess.category}
-\alias{guess.category}
+\name{guess}
+\alias{guess}
 \title{Predict the category of a new observation}
 \usage{
-  guess.category(nn, X)
+  guess(nn, X)
 }
 \arguments{
   \item{nn}{A probabilistic neural network already trained}

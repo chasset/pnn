@@ -1,3 +1,4 @@
-export(category.probs)
+export(guess)
 export(guess.category)
+export(guess.probabilities.of.each.category)
 export(learn)
