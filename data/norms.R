@@ -1,3 +1,4 @@
+set.seed(1)
 norms <- (function(n,m,s,d) {
     a <- cbind(1,rnorm(n,m,s),rnorm(n,m,s))
     b <- cbind(2,rnorm(n,m,s)+d,rnorm(n,m,s))

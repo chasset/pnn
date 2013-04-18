@@ -11,18 +11,3 @@ hold_out <- function(df) {
         return(list(one=one,rest=rest))
     }
 }
-
-#' Apply a function for each set
-#learn and predict for X
-#increment success
-
-
-#' Apply a function at the end
-#sum(success)
-
-#' Apply a final function
-#bic <- function(of=nn) {
-#    for(X in nn$set)
-#}
-#fails = n - success
-#BIC = n * ln (1/n*fails) + k * ln(n)
