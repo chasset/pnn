@@ -6,7 +6,7 @@ Description: This program implements the algorithm proposed by Specht (1990).
     quantitative variables, we classify them in a given number of groups. Then,
     the algorithm is trained with this datasets and should guess afterwards the
     group of any new observation.
-URL: http://chasset.net/r-pnn/
+URL: http://flow.chasset.net/r-pnn/
 Version: 0.9.4
 Author: Pierre-Olivier Chasset
 Maintainer: Pierre-Olivier Chasset <pierre-olivier@chasset.net>

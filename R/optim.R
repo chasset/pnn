@@ -30,3 +30,15 @@ plot.sigma <- function(nn, limits=c(0,2), resolution=10) {
     Performance <- as.vector(apply(X=cbind(Sigma), MARGIN=1, FUN=Success, nn))
     plot(Performance~Sigma)
 }
+
+optim2 <- function(nn, limits=c(0,1000)) {
+    ToMinimize <- iToMinimize(nn)
+    nn$opt <- optimize(f=ToMinimize, interval=limits)
+    nn$sigma <- nn$opt$minimum
+    nn <- perf(nn)
+    return(nn)
+}
+
+#scale
+#kmeans(x=set, centers=pars[1])
+#aggregate(x=kset, by=cluster, FUN=mean)
