@@ -1,0 +1,9 @@
+citHeader("To cite package ‘PNN’ in publications use:")
+citEntry(
+    entry = "Manual",
+    title = "PNN: Probabilistic neural network for the statistical language R",
+    author = personList(as.person("Pierre-Olivier Chasset")),
+    year = 2013,
+    url = "http://flow.chasset.net/pnn/",
+    textVersion = paste0("Chasset P.O. (2013). PNN: Probabilistic neural network for the statistical language R. Software, http://flow.chasset.net/pnn/.")
+)

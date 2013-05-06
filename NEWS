@@ -1,4 +1,9 @@
-pnn 0.9.0
-=========
+pnn 1.0
+=======
+
+* Add documentation, examples and demonstration
+
+pnn 0.9
+=======
 
 * Major functions implemented and pass the unit tests.
