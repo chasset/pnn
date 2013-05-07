@@ -12,12 +12,7 @@
 #'  \item \code{\link{guess}}: Guess the category of a new observation.
 #' }
 #' 
-#' To help the use of \pkg{PNN}, the package contains:
-#' \itemize{
-#'   \item A dataset \code{\link{norms}}.
-#'   \item Two demonstrations: \code{norms-trainingset} and \code{small-trainingset}.
-#'   \item More documentation at \url{http://flow.chasset.net/pnn/}.
-#' }
+#' To help the use of \pkg{PNN}, the package contains a dataset \code{\link{norms}}. You could find more documentation at the package website: \url{http://flow.chasset.net/pnn/}.
 #' 
 #' The Probabilist neural network ist the main object used by the four functions. It is a \code{list} with several description fields:
 #' \itemize{
