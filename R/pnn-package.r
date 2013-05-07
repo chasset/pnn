@@ -54,10 +54,6 @@
 #' guess(smooth(learn(norms), sigma=0.8), c(1,1))
 #' guess(smooth(learn(norms), sigma=0.8), c(2,1))
 #' guess(smooth(learn(norms), sigma=0.8), c(1.5,1))
-#' 
-#' # Demonstrations
-#' \dontrun{demo("norms-trainingset", "pnn")}
-#' \dontrun{demo("small-trainingset", "pnn")}
 #' @aliases pnn
 #' @name pnn-package
 NULL
