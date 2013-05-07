@@ -1,4 +1,11 @@
-context("Optimization")
+context("Smooth")
+
+test_that("Set sigma", {
+    data(norms)
+    pnn <- learn(norms)
+    pnn <- smooth(pnn, sigma=0.8)
+    expect_that(pnn$sigma, equals(0.8))
+})
 
 test_that("Function to minimize", {
     set.seed(1)

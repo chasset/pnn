@@ -1,7 +1,6 @@
-#' Predict the probabilities of each category given X
-#' @param nn An already trained probabilistic neural network
-#' @param X Pattern from which we have to decide a category. It is a set of measurements represented by a p-dimensional vector
-#' @export
+# Predict the probabilities of each category given X
+# @param nn An already trained probabilistic neural network
+# @param X Pattern from which we have to decide a category. It is a set of measurements represented by a p-dimensional vector
 guess.probabilities.of.each.category <- function(nn, X) {
     results <- vector()
     for(category in nn$categories) {

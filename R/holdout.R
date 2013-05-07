@@ -1,5 +1,5 @@
-#' Hold-out method
-#' @param df A data-frame
+# Hold-out method
+# @param df A data-frame
 hold_out <- function(df) {
     i <- 0
     imax <- length(df[,1])

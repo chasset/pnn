@@ -1,4 +1,4 @@
-context("Performance of the neural network")
+context("Perf")
 
 test_that("Dataset with dissimilar categories", {
     set.seed(1)
@@ -6,6 +6,21 @@ test_that("Dataset with dissimilar categories", {
     b <- cbind(5,rnorm(10,5,1))
     trainset <- as.data.frame(rbind(a,b))
     pnn <- learn(set=trainset)
+    pnn$sigma <- 0.3
+    pnn <- perf(pnn)
+    expect_that(pnn$success_rate, equals(.9))
+})
+
+test_that("Dataset with letter categories", {
+    set.seed(1)
+    n <- 10
+    m <- 1
+    s <- 1
+    d <- 4
+    c <- rep(c("A","B"), each=n)
+    x <- c( rnorm(n,m,s), rnorm(n,m,s) + d )
+    trainset <- data.frame(c,x)
+    pnn <- learn(trainset)
     pnn$sigma <- 0.3
     pnn <- perf(pnn)
     expect_that(pnn$success_rate, equals(.9))
