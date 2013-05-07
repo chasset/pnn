@@ -20,15 +20,12 @@
 #' 
 #' # Search the best value
 #' pnn <- learn(norms)
-#' pnn <- smooth(pnn)
-#' pnn$sigma
+#' \dontrun{pnn <- smooth(pnn)}
+#' \dontrun{pnn$sigma}
 #' 
 #' # Or set the value
 #' pnn <- smooth(pnn, sigma=0.8)
 #' pnn$sigma
-#' 
-#' # Plot the evolution of the fit of the sigma value
-#' smooth(pnn, plot=TRUE)
 #' @export
 smooth <- function(nn, sigma, limits=c(0,10)) {
     if(!missing(sigma)) {

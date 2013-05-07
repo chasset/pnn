@@ -47,9 +47,10 @@
 #' 
 #' # The long way
 #' pnn <- learn(norms)
-#' pnn <- smooth(pnn)
+#' pnn <- smooth(pnn, sigma=0.9)
 #' pnn$sigma
-#' pnn <- perf(pnn); pnn$success_rate # Optional
+#' \dontrun{pnn <- perf(pnn) # Optional}
+#' \dontrun{pnn$success_rate # Optional}
 #' guess(pnn, c(1,1))
 #' guess(pnn, c(2,1))
 #' guess(pnn, c(1.5,1))
@@ -60,8 +61,8 @@
 #' guess(smooth(learn(norms), sigma=0.8), c(1.5,1))
 #' 
 #' # Demonstrations
-#' demo("norms-trainingset", "pnn")
-#' demo("small-trainingset", "pnn")
+#' \dontrun{demo("norms-trainingset", "pnn")}
+#' \dontrun{demo("small-trainingset", "pnn")}
 #' @aliases pnn
 #' @name pnn-package
 NULL
