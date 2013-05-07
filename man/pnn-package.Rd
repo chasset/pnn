@@ -22,15 +22,16 @@
   \code{\link{learn}}: Create a new Probabilist neural
   network with a new training set or update an existing one
   with new known observations.  \item \code{\link{smooth}}:
-  Compute the best value using a genetic algorithm.  \item
+  Set the smoothing parameter. If the value is not known, a
+  genetic algorithm search the best value.  \item
   \code{\link{perf}}: Compute the performance of the
   Probabilist neural network.  \item \code{\link{guess}}:
   Guess the category of a new observation. }
 
   To help the use of \pkg{PNN}, the package contains:
-  \itemize{ \item Two datasets: \code{\link{norms}} and
-  \code{\link{skin}}.  \item Two demonstrations:
-  \code{norms-trainingset} and \code{small-trainingset}. }
+  \itemize{ \item A dataset \code{\link{norms}}.  \item Two
+  demonstrations: \code{norms-trainingset} and
+  \code{small-trainingset}. }
 
   The Probabilist neural network returned is a \code{list}.
   It has several description fields: \itemize{ \item
@@ -83,7 +84,7 @@ demo("small-trainingset", "pnn")
 \seealso{
   \code{\link{learn}}, \code{\link{smooth}},
   \code{\link{perf}}, \code{\link{guess}},
-  \code{\link{norms}}, \code{\link{skin}}
+  \code{\link{norms}}
 }
 \keyword{Neural}
 \keyword{Probability}

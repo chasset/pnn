@@ -7,15 +7,16 @@
 #' The package exports four functions:
 #' \itemize{
 #'  \item \code{\link{learn}}: Create a new Probabilist neural network with a new training set or update an existing one with new known observations.
-#'  \item \code{\link{smooth}}: Compute the best value using a genetic algorithm.
+#'  \item \code{\link{smooth}}: Set the smoothing parameter. If the value is not known, a genetic algorithm search the best value.
 #'  \item \code{\link{perf}}: Compute the performance of the Probabilist neural network.
 #'  \item \code{\link{guess}}: Guess the category of a new observation.
 #' }
 #' 
 #' To help the use of \pkg{PNN}, the package contains:
 #' \itemize{
-#'   \item Two datasets: \code{\link{norms}} and \code{\link{skin}}.
+#'   \item A dataset \code{\link{norms}}.
 #'   \item Two demonstrations: \code{norms-trainingset} and \code{small-trainingset}.
+#'   \item More documentation at \url{http://flow.chasset.net/pnn/}.
 #' }
 #' 
 #' The Probabilist neural network returned is a \code{list}. It has several description fields:
@@ -32,11 +33,9 @@
 #'  \item \code{bic}: It is an adapted version of the Bayesian Information Criterion helping to compare different version of models.
 #' }
 #' 
-#' More documentation at \url{http://flow.chasset.net/pnn/}.
-#' 
 #' @author Pierre-Olivier Chasset
 #' @docType package
-#' @seealso \code{\link{learn}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{guess}}, \code{\link{norms}}, \code{\link{skin}}
+#' @seealso \code{\link{learn}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{guess}}, \code{\link{norms}}
 #' @keywords Neural network, Probability
 #' @references Specht D.F. (1990). Probabilistic neural networks. Neural networks, 3(1):109-118.
 #' @examples

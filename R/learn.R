@@ -8,7 +8,7 @@
 #' @param category.column The field number of the factor (1 by default)
 #' @param nn An already trained Probabilistic neural network
 #' 
-#' @seealso \code{\link{pnn-package}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{guess}}, \code{\link{norms}}, \code{\link{skin}}
+#' @seealso \code{\link{pnn-package}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{guess}}, \code{\link{norms}}
 #' 
 #' @export
 #' 
@@ -35,8 +35,8 @@ learn <- function(set, nn, category.column=1) {
     }
     nn$set[,nn$category.column] <- factor(nn$set[,nn$category.column])
     nn$categories <- levels(nn$set[,nn$category.column])
-    nn$k <- length(set[1,]) - 1
-    nn$n <- length(set[,1])
+    nn$k <- length(nn$set[1,]) - 1
+    nn$n <- length(nn$set[,1])
     # Scale
     return(nn)
 }

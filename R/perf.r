@@ -12,7 +12,7 @@
 #' 
 #' @return A probabilist neural network updated with its performance.
 #' 
-#' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{smooth}}, \code{\link{guess}}, \code{\link{norms}}, \code{\link{skin}}
+#' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{smooth}}, \code{\link{guess}}, \code{\link{norms}}
 #' 
 #' @examples
 #' library(pnn)

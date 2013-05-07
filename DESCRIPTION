@@ -7,7 +7,9 @@ Description: The program pnn implements the algorithm proposed by Specht (1990).
     the algorithm is trained with this datasets and should guess afterwards the
     group of any new observation.  This neural network has the main advantage to
     begin generalization instantaneously even with a small set of known
-    observations.
+    observations. It is delivered with four functions — learn, smooth, perf and
+    guess —, a dataset and two demonstrations. The functions are documented with
+    examples and provided with unit tests.
 URL: http://flow.chasset.net/pnn/
 Version: 1.0
 Author: Pierre-Olivier Chasset
@@ -27,5 +29,4 @@ Collate:
     'guess-probabilities.R'
     'perf.r'
     'guess.r'
-    'data-skin.R'
     'smooth.R'

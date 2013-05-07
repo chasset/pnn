@@ -7,7 +7,7 @@
 #' @param nn A probabilistic neural network already trained with the function \code{\link{learn}} and smoothed with the function \code{\link{smooth}}.
 #' @param X A vector describing a new observation.
 #' 
-#' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{norms}}, \code{\link{skin}}
+#' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{norms}}
 #' 
 #' @return A \code{list} of the guessed category and the probabilities of each category.
 #' 

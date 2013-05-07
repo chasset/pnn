@@ -2,14 +2,21 @@
 \alias{smooth}
 \title{Smooth}
 \usage{
-  smooth(nn, limits = c(0, 10), sigma)
+  smooth(nn, limits = c(0, 10), sigma, plot = FALSE)
 }
 \arguments{
   \item{nn}{A Probabilist neural network.}
 
-  \item{limits}{A vector giving the interval (minimum,
-  maximum) in which the function has to search the best
-  value.}
+  \item{limits}{Optional. A vector giving the interval
+  (minimum, maximum) in which the function has to search
+  the best value.}
+
+  \item{sigma}{Optional. If the value is already known, it
+  sets directly the parameter and do not search for the
+  best value.}
+
+  \item{plot}{Optional. This is a graphic search of the
+  best value if set to \code{TRUE}.}
 }
 \description{
   Set the smoothing parameter.
@@ -42,6 +49,6 @@ pnn <- smooth(pnn, sigma=0.8)
 \seealso{
   \code{\link{pnn-package}}, \code{\link{learn}},
   \code{\link{perf}}, \code{\link{guess}},
-  \code{\link{norms}}, \code{\link{skin}}
+  \code{\link{norms}}
 }
 

@@ -44,6 +44,6 @@ pnn$n
 \seealso{
   \code{\link{pnn-package}}, \code{\link{smooth}},
   \code{\link{perf}}, \code{\link{guess}},
-  \code{\link{norms}}, \code{\link{skin}}
+  \code{\link{norms}}
 }
 

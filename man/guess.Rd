@@ -36,6 +36,6 @@ guess(pnn, c(1.5,1))
 \seealso{
   \code{\link{pnn-package}}, \code{\link{learn}},
   \code{\link{smooth}}, \code{\link{perf}},
-  \code{\link{norms}}, \code{\link{skin}}
+  \code{\link{norms}}
 }
 
