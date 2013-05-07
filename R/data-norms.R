@@ -9,7 +9,7 @@
 #' @keywords datasets
 #' @format A data-frame with 400 rows and 3 columns (category \code{c} and coordinates \code{x} and \code{y}).
 #' @usage data(norms)
-#' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{guess}}, \code{\link{skin}}
+#' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{smooth}}, \code{\link{perf}}, \code{\link{guess}}
 #' @examples
 #' library(pnn)
 #' data(norms)

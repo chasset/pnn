@@ -1,7 +1,13 @@
 pnn 1.0
 =======
 
-* Add documentation, examples and demonstration
+* Complete documentations with examples.
+
+* Add two demonstrations.
+
+* Suppress 'skin' dataset.
+
+* Clean the user interface with only four exported functions
 
 pnn 0.9
 =======

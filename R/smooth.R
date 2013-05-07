@@ -33,7 +33,7 @@ smooth <- function(nn, sigma, limits=c(0,10)) {
         return(nn)
     }
     ToMinimize <- iToMinimize(nn)
-    library(rgenoud)
+    require(rgenoud)
     range <- matrix(limits, ncol=2)
     opt <- genoud(fn=ToMinimize, nvars=1, Domains=range, pop.size=10, wait.generations=2, solution.tolerance=1)
     nn$sigma <- opt$par
@@ -41,6 +41,7 @@ smooth <- function(nn, sigma, limits=c(0,10)) {
 }
 
 iToMinimize <- function(nn) {
+    result <- NULL
     return(
         function(parameter) {
             nn$sigma <<- parameter
