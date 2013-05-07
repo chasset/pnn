@@ -2,10 +2,10 @@
 \alias{smooth}
 \title{Smooth}
 \usage{
-  smooth(nn, limits = c(0, 10), sigma, plot = FALSE)
+  smooth(nn, sigma, limits = c(0, 10))
 }
 \arguments{
-  \item{nn}{A Probabilist neural network.}
+  \item{nn}{A trained Probabilist neural network.}
 
   \item{limits}{Optional. A vector giving the interval
   (minimum, maximum) in which the function has to search
@@ -14,32 +14,42 @@
   \item{sigma}{Optional. If the value is already known, it
   sets directly the parameter and do not search for the
   best value.}
-
-  \item{plot}{Optional. This is a graphic search of the
-  best value if set to \code{TRUE}.}
+}
+\value{
+  A trained and smoothed Probabilistic neural network.
 }
 \description{
-  Set the smoothing parameter.
+  Work around the smoothing parameter.
 }
 \details{
-  The function \code{smooth} sets the smoothing parameter
-  for a Probabilist neural network. If you have no idea of
-  which value it can be, you can let the function finds the
-  best value using a genetic algorithm. This search takes
-  some time, so if you have already an idea of the value,
-  you can set it in the \code{sigma} argument.
+  The function \code{smooth} aims to help to set the
+  smoothing parameter for a Probabilist neural network. If
+  you have no idea of which value it can be, you can let
+  the function finds the best value using a genetic
+  algorithm. This can be done providing to the function
+  only the parameter \code{nn}. This search takes some
+  time, so if you have already an idea of the value, you
+  can set it if you provide both parameters \code{nn} and
+  \code{sigma}. If you want to check visually how fit is
+  the sigma value, you can get a plot if you provide
+  \code{nn} and set \code{plot} to TRUE. It sets the
+  parameters \code{sigma} of the neural network.
 }
 \examples{
 library(pnn)
 data(norms)
 
 # Search the best value
-pnn <- learn(set=norms)
+pnn <- learn(norms)
 pnn <- smooth(pnn)
 pnn$sigma
 
 # Or set the value
 pnn <- smooth(pnn, sigma=0.8)
+pnn$sigma
+
+# Plot the evolution of the fit of the sigma value
+smooth(pnn, plot=TRUE)
 }
 \references{
   Walter Mebane, Jr. and Jasjeet S. Sekhon. 2011. Genetic

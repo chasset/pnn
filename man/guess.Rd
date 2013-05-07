@@ -5,9 +5,8 @@
   guess(nn, X)
 }
 \arguments{
-  \item{nn}{A probabilistic neural network already trained
-  with the function \code{\link{learn}} and smoothed with
-  the function \code{\link{smooth}}.}
+  \item{nn}{A trained and smoothed Probabilistic neural
+  network.}
 
   \item{X}{A vector describing a new observation.}
 }
@@ -27,9 +26,11 @@
 \examples{
 library(pnn)
 data(norms)
-pnn <- learn(set=norms)
-pnn$sigma <- 0.8
+pnn <- learn(norms)
+pnn <- smooth(pnn, sigma=0.8)
 guess(pnn, c(1,1))
+guess(pnn, c(1,1))$category
+guess(pnn, c(1,1))$probabilities
 guess(pnn, c(2,1))
 guess(pnn, c(1.5,1))
 }

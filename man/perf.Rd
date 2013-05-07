@@ -5,8 +5,8 @@
   perf(nn)
 }
 \arguments{
-  \item{nn}{A probabilist neural network already trained
-  and smoothed.}
+  \item{nn}{A trained and smoothed Probabilist neural
+  network.}
 }
 \value{
   A probabilist neural network updated with its
@@ -24,14 +24,14 @@
   generates: \itemize{ \item Two lists of \code{observed}
   and \code{guessed} values.  \item the following
   statistics: number of \code{success} and \code{fails}, a
-  sucess rate (\code{success_rate}) and a \code{BIC}
+  sucess rate (\code{success_rate}) and a \code{bic}
   indicator. }
 }
 \examples{
 library(pnn)
 data(norms)
-pnn <- learn(set=norms)
-pnn$sigma <- 0.8
+pnn <- learn(norms)
+pnn <- smooth(pnn, sigma=0.8)
 pnn <- perf(pnn)
 pnn$observed
 pnn$guessed

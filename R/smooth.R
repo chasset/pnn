@@ -1,13 +1,15 @@
 #' Smooth
 #' 
-#' Set the smoothing parameter.
+#' Work around the smoothing parameter.
 #' 
-#' The function \code{smooth} sets the smoothing parameter for a Probabilist neural network. If you have no idea of which value it can be, you can let the function finds the best value using a genetic algorithm. This search takes some time, so if you have already an idea of the value, you can set it in the \code{sigma} argument.
+#' The function \code{smooth} aims to help to set the smoothing parameter for a Probabilist neural network. If you have no idea of which value it can be, you can let the function finds the best value using a genetic algorithm. This can be done providing to the function only the parameter \code{nn}. This search takes some time, so if you have already an idea of the value, you can set it if you provide both parameters \code{nn} and \code{sigma}. If you want to check visually how fit is the sigma value, you can get a plot if you provide \code{nn} and set \code{plot} to TRUE. It sets the parameters \code{sigma} of the neural network.
 #' 
-#' @param nn A Probabilist neural network.
+#' @param nn A trained Probabilist neural network.
 #' @param limits Optional. A vector giving the interval (minimum, maximum) in which the function has to search the best value.
 #' @param sigma Optional. If the value is already known, it sets directly the parameter and do not search for the best value.
-#' @param plot Optional. This is a graphic search of the best value if set to \code{TRUE}.
+# @param plot Optional. This is a graphic search of the best value if set to \code{TRUE}.
+#' 
+#' @return A trained and smoothed Probabilistic neural network.
 #' 
 #' @seealso \code{\link{pnn-package}}, \code{\link{learn}}, \code{\link{perf}}, \code{\link{guess}}, \code{\link{norms}}
 #' 
@@ -17,19 +19,18 @@
 #' data(norms)
 #' 
 #' # Search the best value
-#' pnn <- learn(set=norms)
+#' pnn <- learn(norms)
 #' pnn <- smooth(pnn)
 #' pnn$sigma
 #' 
 #' # Or set the value
 #' pnn <- smooth(pnn, sigma=0.8)
+#' pnn$sigma
 #' 
+#' # Plot the evolution of the fit of the sigma value
+#' smooth(pnn, plot=TRUE)
 #' @export
-smooth <- function(nn, limits=c(0,10), sigma, plot=FALSE) {
-    if(plot==TRUE) {
-        plot.sigma(nn)
-        return(nn)
-    }
+smooth <- function(nn, sigma, limits=c(0,10)) {
     if(!missing(sigma)) {
         nn$sigma <- sigma
         return(nn)
@@ -38,7 +39,6 @@ smooth <- function(nn, limits=c(0,10), sigma, plot=FALSE) {
     library(rgenoud)
     range <- matrix(limits, ncol=2)
     opt <- genoud(fn=ToMinimize, nvars=1, Domains=range, pop.size=10, wait.generations=2, solution.tolerance=1)
-    nn$opt <- opt
     nn$sigma <- opt$par
     return(nn)
 }
