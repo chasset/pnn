@@ -12,12 +12,7 @@
 #'  \item \code{\link{guess}}: Guess the category of a new observation.
 #' }
 #' 
-#' To help the use of \pkg{PNN}, the package contains:
-#' \itemize{
-#'   \item A dataset \code{\link{norms}}.
-#'   \item Two demonstrations: \code{norms-trainingset} and \code{small-trainingset}.
-#'   \item More documentation at \url{http://flow.chasset.net/pnn/}.
-#' }
+#' To help the use of \pkg{PNN}, the package contains a dataset \code{\link{norms}}. You could find more documentation at the package website: \url{http://flow.chasset.net/pnn/}.
 #' 
 #' The Probabilist neural network ist the main object used by the four functions. It is a \code{list} with several description fields:
 #' \itemize{
@@ -47,9 +42,10 @@
 #' 
 #' # The long way
 #' pnn <- learn(norms)
-#' pnn <- smooth(pnn)
+#' pnn <- smooth(pnn, sigma=0.9)
 #' pnn$sigma
-#' pnn <- perf(pnn); pnn$success_rate # Optional
+#' \dontrun{pnn <- perf(pnn) # Optional}
+#' \dontrun{pnn$success_rate # Optional}
 #' guess(pnn, c(1,1))
 #' guess(pnn, c(2,1))
 #' guess(pnn, c(1.5,1))
@@ -60,8 +56,8 @@
 #' guess(smooth(learn(norms), sigma=0.8), c(1.5,1))
 #' 
 #' # Demonstrations
-#' demo("norms-trainingset", "pnn")
-#' demo("small-trainingset", "pnn")
+#' \dontrun{demo("norms-trainingset", "pnn")}
+#' \dontrun{demo("small-trainingset", "pnn")}
 #' @aliases pnn
 #' @name pnn-package
 NULL

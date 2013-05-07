@@ -20,15 +20,12 @@
 #' 
 #' # Search the best value
 #' pnn <- learn(norms)
-#' pnn <- smooth(pnn)
-#' pnn$sigma
+#' \dontrun{pnn <- smooth(pnn)}
+#' \dontrun{pnn$sigma}
 #' 
 #' # Or set the value
 #' pnn <- smooth(pnn, sigma=0.8)
 #' pnn$sigma
-#' 
-#' # Plot the evolution of the fit of the sigma value
-#' smooth(pnn, plot=TRUE)
 #' @export
 smooth <- function(nn, sigma, limits=c(0,10)) {
     if(!missing(sigma)) {
@@ -36,7 +33,7 @@ smooth <- function(nn, sigma, limits=c(0,10)) {
         return(nn)
     }
     ToMinimize <- iToMinimize(nn)
-    library(rgenoud)
+    require(rgenoud)
     range <- matrix(limits, ncol=2)
     opt <- genoud(fn=ToMinimize, nvars=1, Domains=range, pop.size=10, wait.generations=2, solution.tolerance=1)
     nn$sigma <- opt$par
@@ -44,6 +41,7 @@ smooth <- function(nn, sigma, limits=c(0,10)) {
 }
 
 iToMinimize <- function(nn) {
+    result <- NULL
     return(
         function(parameter) {
             nn$sigma <<- parameter

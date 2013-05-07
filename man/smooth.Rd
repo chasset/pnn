@@ -41,15 +41,12 @@ data(norms)
 
 # Search the best value
 pnn <- learn(norms)
-pnn <- smooth(pnn)
-pnn$sigma
+\dontrun{pnn <- smooth(pnn)}
+\dontrun{pnn$sigma}
 
 # Or set the value
 pnn <- smooth(pnn, sigma=0.8)
 pnn$sigma
-
-# Plot the evolution of the fit of the sigma value
-smooth(pnn, plot=TRUE)
 }
 \references{
   Walter Mebane, Jr. and Jasjeet S. Sekhon. 2011. Genetic

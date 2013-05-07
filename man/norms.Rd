@@ -22,7 +22,7 @@ norms[1:10,]
 \seealso{
   \code{\link{pnn-package}}, \code{\link{learn}},
   \code{\link{smooth}}, \code{\link{perf}},
-  \code{\link{guess}}, \code{\link{skin}}
+  \code{\link{guess}}
 }
 \keyword{datasets}
 
