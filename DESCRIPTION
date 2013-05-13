@@ -10,7 +10,7 @@ Description: The program pnn implements the algorithm proposed by Specht
     set of known observations. It is delivered with four functions - learn,
     smooth, perf and guess - and a dataset. The functions are documented with
     examples and provided with unit tests.
-URL: http://flow.chasset.net/pnn/
+URL: http://flow.chasset.net/r-pnn/
 Version: 1.1.0
 Author: Pierre-Olivier Chasset
 Maintainer: Pierre-Olivier Chasset <pierre-olivier@chasset.net>
