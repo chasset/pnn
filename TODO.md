@@ -1,6 +1,11 @@
 TODO
 ====
 
+Bugs
+----
+
+* CITATION: Bibtex take the first name as last name.
+
 Next features
 -------------
 
