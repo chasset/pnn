@@ -33,7 +33,7 @@
   To help the use of \pkg{PNN}, the package contains a
   dataset \code{\link{norms}}. You could find more
   documentation at the package website:
-  \url{http://flow.chasset.net/pnn/}.
+  \url{http://flow.chasset.net/r-pnn/}.
 
   The Probabilist neural network ist the main object used
   by the four functions. It is a \code{list} with several
