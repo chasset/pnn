@@ -19,7 +19,7 @@ This program is released under the [GNU Affero General public license](http://ww
 How to cite
 -----------
 
-Chasset P.-O. (2013). *Probabilistic neural network for the statistical software R*. Software, http://flow.chasset.net/r-pnn/.
+Chasset P.-O. (2013). *PNN: Probabilistic neural network for the statistical software R*. Software, http://flow.chasset.net/r-pnn/.
 
 Reference
 ---------
