@@ -7,7 +7,7 @@ tagline: Probabilistic Neural Network
 
 <h3>About</h3>
 
-The program <em>PNN</em> implements the algorithm proposed by Specht [1]. It is written in the statistical language R [2]. It solves a common problem in automatic learning. Knowing a set of observations described by a vector of quantitative variables, we classify them in a given number of groups. Then, the algorithm is trained with this dataset and should guess afterwards the group of any new observation. This neural network has the main advantage to begin generalization instantaneously even with a small set of known observations. The program is delivered with four functions — <em>learn</em>, <em>smooth</em>, <em>perf</em> and <em>guess</em> — and a dataset. The functions are documented with examples and provided with unit tests.
+<p>The program <em>PNN</em> implements the algorithm proposed by Specht [1]. It is written in the statistical language R [2]. It solves a common problem in automatic learning. Knowing a set of observations described by a vector of quantitative variables, we classify them in a given number of groups. Then, the algorithm is trained with this dataset and should guess afterwards the group of any new observation. This neural network has the main advantage to begin generalization instantaneously even with a small set of known observations. The program is delivered with four functions — <em>learn</em>, <em>smooth</em>, <em>perf</em> and <em>guess</em> — and a dataset. The functions are documented with examples and provided with unit tests.</p>
 
 <img src="https://dl.dropboxusercontent.com/u/483748/reports/pnn-probability-areas-0.05.png" />
 
@@ -17,19 +17,26 @@ The program <em>PNN</em> implements the algorithm proposed by Specht [1]. It is 
 
 <h3>Tutorials</h3>
 
-<p>Several tutorials cover different thematic:</p>
+<p>Several tutorials cover different themes:</p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 <h3>Author</h3>
 
-<a href="http://pierre-olivier.chasset.net">Pierre-Olivier Chasset</a>
+<p><a href="http://pierre-olivier.chasset.net">Pierre-Olivier Chasset</a></p>
 
 <h3>Licence</h3>
 
-This program is released under the <a href="http://www.gnu.org/licenses/agpl.html" target="_blank">GNU Affero General public license</a>.
+<p>This program is released under the <a href="http://www.gnu.org/licenses/agpl.html" target="_blank">GNU Affero General public license</a>.</p>
 
 <h3>References</h3>
 
-<table>
+<table style="border: none;" cellspacing="0" cellpadding="0">
   <tr>
     <td>[1]</td>
     <td>Specht, D. F. (1990). <em>Probabilistic neural networks.</em> Neural networks, 3(1):109–118.</td>
