@@ -21,7 +21,7 @@ tagline: Probabilistic Neural Network
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.tagline }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -36,7 +36,7 @@ tagline: Probabilistic Neural Network
 
 <h3>References</h3>
 
-<table style="border: none;" cellspacing="0" cellpadding="0">
+<table style="border: none; border-collapse:collapse;" cellspacing="0" cellpadding="0">
   <tr>
     <td>[1]</td>
     <td>Specht, D. F. (1990). <em>Probabilistic neural networks.</em> Neural networks, 3(1):109–118.</td>
