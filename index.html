@@ -9,9 +9,11 @@ tagline: Probabilistic Neural Network
 
 The program <em>PNN</em> implements the algorithm proposed by Specht [1]. It is written in the statistical language R [2]. It solves a common problem in automatic learning. Knowing a set of observations described by a vector of quantitative variables, we classify them in a given number of groups. Then, the algorithm is trained with this dataset and should guess afterwards the group of any new observation. This neural network has the main advantage to begin generalization instantaneously even with a small set of known observations. The program is delivered with four functions — <em>learn</em>, <em>smooth</em>, <em>perf</em> and <em>guess</em> — and a dataset. The functions are documented with examples and provided with unit tests.
 
+<img src="https://dl.dropboxusercontent.com/u/483748/reports/pnn-probability-areas-0.05.png" />
+
 <h3>Resources</h3>
 
-<p>The package is available at <a href="http://cran.r-project.org/web/packages/pnn/index.html" target="_blank">CRAN</a>. Its current source code is available at <a href="http://code.chasset.net/r-pnn/">Github</a>. A <a href="http://cran.r-project.org/web/packages/pnn/pnn.pdf">manual</a> of the functions  <em>learn</em>, <em>smooth</em>, <em>perf</em> and <em>guess</em> provided with examples. A lightning talk<a href="http://r2013-lyon.sciencesconf.org/18878/document">paper</a> have been presented at <a href="http://r2013-lyon.sciencesconf.org/program">Deuxième rencontre R</a>, 27-28/06/2013, Lyon, France.</p>
+<p>The package is available at <a href="http://cran.r-project.org/web/packages/pnn/index.html" target="_blank">CRAN</a>. Its current source code is available at <a href="https://github.com/chasset/pnn">Github</a>. A <a href="http://cran.r-project.org/web/packages/pnn/pnn.pdf">manual</a> of the functions  <em>learn</em>, <em>smooth</em>, <em>perf</em> and <em>guess</em> is provided with examples. A lightning talk (<a href="http://r2013-lyon.sciencesconf.org/18878/document">abstract</a>) have been presented at <a href="http://r2013-lyon.sciencesconf.org/program">Deuxième rencontre R</a>, 27-28/06/2013, Lyon, France.</p>
 
 <h3>Tutorials</h3>
 
@@ -33,7 +35,7 @@ This program is released under the <a href="http://www.gnu.org/licenses/agpl.ht
     <td>Specht, D. F. (1990). <em>Probabilistic neural networks.</em> Neural networks, 3(1):109–118.</td>
   </tr>
   <tr>
-    <td>21]</td>
+    <td>[2]</td>
     <td>R Core Team (2012). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. ISBN 3-900051-07-0, <a href="http://www.R-project.org/">http://www.R-project.org/</a>.</td>
   </tr>
 </table>
