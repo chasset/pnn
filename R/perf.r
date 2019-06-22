@@ -36,7 +36,7 @@ perf <- function(nn) {
         model0$sigma <- nn$sigma
         X <- ts$one[-nn$category.column]
         prediction <- guess(model0, as.matrix(X))
-        category <- ifelse(!is.na(pred), pred$category, pred)
+        category <- ifelse(!is.na(prediction), prediction$category, prediction)
         if(!is.na(category) && category == ts$one[nn$category.column]) success <- success + 1
         guessed <- c(guessed, category)
     }
