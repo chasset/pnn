@@ -1,7 +1,7 @@
-[![DOI](https://zenodo.org/badge/9341746.svg)](https://zenodo.org/badge/latestdoi/9341746)
-
 PNN: Probabilistic neural network for the statistical language R
 ================================================================
+
+[![DOI](https://zenodo.org/badge/9341746.svg)](https://zenodo.org/badge/latestdoi/9341746)
 
 Description
 -----------
