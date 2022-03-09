@@ -6,7 +6,7 @@ PNN: Probabilistic neural network for the statistical language R
 Description
 -----------
 
-The program *PNN* implements the algorithm proposed by Specht (1990). It is written in the [R](http://www.r-project.org/) statistical langage. It solves a common problem in automatic learning. Knowing a set of observations described by a vector of quantitative variables, we classify them in a given number of groups. Then, the algorithm is trained with this dataset and should guess afterwards the group of any new observation. This neural network has the main advantage to begin generalization instantaneously even with a small set of known observations. It is delivered with four functions — *learn*, *smooth*, *perf* and *guess* — and a dataset. The functions are documented with examples and provided with unit tests. [Continue reading →](http://pnn.chasset.net/) 
+The program *PNN* implements the algorithm proposed by Specht (1990). It is written in the [R](http://www.r-project.org/) statistical langage. It solves a common problem in automatic learning. Knowing a set of observations described by a vector of quantitative variables, we classify them in a given number of groups. Then, the algorithm is trained with this dataset and should guess afterwards the group of any new observation. This neural network has the main advantage to begin generalization instantaneously even with a small set of known observations. It is delivered with four functions — *learn*, *smooth*, *perf* and *guess* — and a dataset. The functions are documented with examples and provided with unit tests.
 
 License
 -------
